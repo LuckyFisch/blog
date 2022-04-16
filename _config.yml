@@ -1,0 +1,138 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 一千四光年之外，那一颗星的色彩 # 网站标题
+subtitle: 'SaltedFishのblog' # 网站副标题
+description: '一条正在努力的咸鱼' # 网站描述
+keywords:  # 网站的关键词。支持多个关键词
+author: SaltedFish # 网站创建者，个人名字
+language: zh-CN # 网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN
+timezone: '' # 网站时区。Hexo 默认使用您电脑的时区。请参考 时区列表 进行设置，如 America/New_York, Japan, 和 UTC 。一般的，对于中国大陆地区可以使用 Asia/Shanghai
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://blog.saltedfish.xyz
+permalink: posts/:hash/  # 文章链接的格式。可以使用 :year, :month, :day, :title, :i_year, :i_month, :i_day, :i_title, :categories, :short_month, :short_day, :short_title, :filename, :i_filename, :categories_filename, :slug, :i_slug, :categories_slug, :ext, :i_ext, :categories_ext, :category, :i_category, :categories_category, :short_category, :i_short_category, :categories_short_category, :category_slug, :i_category_slug, :categories_category_slug, :category_short_slug, :i_category_short_slug, :categories_category_short_slug, :category_slug_nodash, :i_category_slug_nodash, :categories_category_slug_nodash, :category_short_slug_nodash, :i_category_short_slug_nodash, :categories_category_short_slug_nodash, :category_slug_dashed, :i_category_slug_dashed, :categories_category_slug_dashed, :category_short_slug_dashed, :i_category_short_slug_dashed, :categories_category_short_slug_dashed, :category_slug_dashed_nodash, :i_category_slug_dashed_nodash, :categories_category_slug_dashed_nodash, :category_short_slug_dashed_nodash, :i_category_short_slug_dashed_nodash, :categories_category_short_slug_dashed_nodash, :category_slug_dashed_dashed, :i_category_slug_dashed_dashed, :categories_category_slug_dashed_dashed, :category_short_slug_dashed_d
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # 如果为 true，则在 URL 末尾添加 /index.html
+  trailing_html: true # 如果为 true，则在 URL 末尾添加 .html
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: butterfly
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: 'git'
+  repo: 'https://github.com/LuckyFisch/LuckyFisch.github.io.git'
+  branch: main
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+# 追番页面配置
+bangumi:
+  enable: true 
+  vmid: 40235829  # B站的UID
+  title: '追番列表'
+  quote: '生命不息，追番不止！'
+  show: 1
+  loading: '/img/bangumi-loading.gif'
+
+# 侧边时钟配置
+# 配置来自 https://akilar.top/posts/4e39cf4a/
+electric_clock:
+  enable: true # 开关
+  priority: 0 #过滤器优先权
+  enable_page: all # 应用页面
+  exclude:
+  layout: # 挂载容器类型
+    type: class
+    name: sticky_layout
+    index: 0
+  loading: https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif
+  clock_css: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css
+  clock_js: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js
+  ip_api: https://pv.sohu.com/cityjson?ie=utf-8
