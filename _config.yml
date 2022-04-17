@@ -4,12 +4,12 @@
 
 # Site
 title: 一千四光年之外，那一颗星的色彩 # 网站标题
-subtitle: 'SaltedFishのblog' # 网站副标题
+subtitle: 'SaltedFishの Blog' # 网站副标题
 description: '一条正在努力的咸鱼' # 网站描述
 keywords:  # 网站的关键词。支持多个关键词
 author: SaltedFish # 网站创建者，个人名字
 language: zh-CN # 网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN
-timezone: '' # 网站时区。Hexo 默认使用您电脑的时区。请参考 时区列表 进行设置，如 America/New_York, Japan, 和 UTC 。一般的，对于中国大陆地区可以使用 Asia/Shanghai
+timezone: 'Asia/Shanghai' # 网站时区。Hexo 默认使用您电脑的时区。请参考 时区列表 进行设置，如 America/New_York, Japan, 和 UTC 。一般的，对于中国大陆地区可以使用 Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -106,11 +106,12 @@ deploy:
   repo: 'https://github.com/LuckyFisch/LuckyFisch.github.io.git'
   branch: main
 
+# 搜索配置
 search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 10000
+  path: search.xml  # 搜索结果文件
+  field: post # 搜索字段
+  format: html  # 搜索结果格式
+  limit: 10000  # 搜索结果数量
 
 # 追番页面配置
 bangumi:
@@ -129,10 +130,9 @@ electric_clock:
   enable_page: all # 应用页面
   exclude:
   layout: # 挂载容器类型
-    type: class
-    name: sticky_layout
-    index: 0
-  loading: https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif
-  clock_css: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css
-  clock_js: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js
-  ip_api: https://pv.sohu.com/cityjson?ie=utf-8
+    type: class # 挂载类型
+    name: sticky_layout # 挂载容器类名
+  loading: /clock/lib/loading.gif  # 加载中图片
+  clock_css: /clock/lib/clock.min.css  # 时钟样式
+  clock_js: /clock/lib/clock.min.js  # 时钟脚本
+  ip_api: https://pv.sohu.com/cityjson?ie=utf-8 # IP地址查询
