@@ -132,7 +132,7 @@
   # A simple 404 page (404页面)
   error_404:
     enable: true  # 允许使用404页面
-    subtitle: '当前页面未能找到，可能已被删除或者正在维护'  # 404页面的副标题
+    subtitle: '你访问的页面未能找到，可能已被删除或者正在维护'  # 404页面的副标题
     background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png # 404页面的背景图片
 
   # 设置文章显示相关信息
