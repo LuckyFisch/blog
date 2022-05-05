@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai' # 网站时区。Hexo 默认使用您电脑的时区�
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.saltedfish.xyz
+url: https://blog.lovelyloli.cn
 permalink: posts/:hash/  # 文章链接的格式。可以使用 :year, :month, :day, :title, :i_year, :i_month, :i_day, :i_title, :categories, :short_month, :short_day, :short_title, :filename, :i_filename, :categories_filename, :slug, :i_slug, :categories_slug, :ext, :i_ext, :categories_ext, :category, :i_category, :categories_category, :short_category, :i_short_category, :categories_short_category, :category_slug, :i_category_slug, :categories_category_slug, :category_short_slug, :i_category_short_slug, :categories_category_short_slug, :category_slug_nodash, :i_category_slug_nodash, :categories_category_slug_nodash, :category_short_slug_nodash, :i_category_short_slug_nodash, :categories_category_short_slug_nodash, :category_slug_dashed, :i_category_slug_dashed, :categories_category_slug_dashed, :category_short_slug_dashed, :i_category_short_slug_dashed, :categories_category_short_slug_dashed, :category_slug_dashed_nodash, :i_category_slug_dashed_nodash, :categories_category_slug_dashed_nodash, :category_short_slug_dashed_nodash, :i_category_short_slug_dashed_nodash, :categories_category_short_slug_dashed_nodash, :category_slug_dashed_dashed, :i_category_slug_dashed_dashed, :categories_category_slug_dashed_dashed, :category_short_slug_dashed_d
 permalink_defaults:
 pretty_urls:

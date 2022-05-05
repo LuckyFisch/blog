@@ -74,24 +74,24 @@
   # --------------------------------------
 
   # Favicon（网站图标）
-  favicon: https://images.saltedfish.xyz/images/icon/favicon.ico # 图标路径
+  favicon: https://file.lovelyloli.cn/images/icon/favicon.ico # 图标路径
 
   # Avatar (头像)
   avatar:
-    img: https://images.saltedfish.xyz/images/head/miku_head.jpg  # 头像路径
+    img: https://file.lovelyloli.cn/images/head/miku_head.jpg  # 头像路径
     effect: false # 头像是否一直转圈
 
   # Disable all banner image
   disable_top_img: false  # 允许使用顶部图片
 
   # 主页图片
-  index_img: https://images.saltedfish.xyz/images/Web_page_picture/index.jpg
+  index_img: https://file.lovelyloli.cn/images/Web_page_picture/index.jpg
 
   # 主页的顶部图片如果页面的横幅未设置，它将显示默认顶部图片
   default_top_img: https://api.ixiaowai.cn/api/api.php
 
   # 时间轴图片
-  archive_img: https://images.saltedfish.xyz/images/Web_page_picture/time.png
+  archive_img: https://file.lovelyloli.cn/images/Web_page_picture/time.png
 
   # 如果标签页的横幅没有设置，它将显示默认顶部的图片
   # note: tag page, not tags page (子標籤頁面的 top_img)
@@ -132,7 +132,7 @@
   # A simple 404 page (404页面)
   error_404:
     enable: true  # 允许使用404页面
-    subtitle: '页面可能找不到回家的路了，你能帮他找回来吗？'  # 404页面的副标题
+    subtitle: '当前页面未能找到，可能已被删除或者正在维护'  # 404页面的副标题
     background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png # 404页面的背景图片
 
   # 设置文章显示相关信息
@@ -398,7 +398,7 @@
     owner:
       enable: true  # 是否显示作者信息
       since: 2021 # 博客创建时间
-    custom_text: <a href="https://icp.gov.moe/?keyword=20222204"><img class="icp-icon" src="https://images.saltedfish.xyz/images/icon/moe_icp_favicon.ico"><span>萌ICP备 20222204 号</span><br><a href="https://beian.miit.gov.cn/#/Integrated/index"><img class="icp-icon" src="https://images.saltedfish.xyz/images/icon/police.png"><span>蜀ICP备 2021028665 号</span><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51012202001107"> <span>&nbsp;&nbsp;川公网安备 51012202001107 号</span><br><a class="footer-a" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral")">本网站由 <img src="https://images.saltedfish.xyz/images/icon/upyun.png" data-ll-status="loaded" width="60" height="auto" style="vertical-align:-10px;margin:'0 5px;"> 提供 CDN 加速 / 云储存服务</a> # 页脚自定义文本
+    custom_text: <a href="https://icp.gov.moe/?keyword=20222204"><img class="icp-icon" src="https://file.lovelyloli.cn/images/icon/moe_icp_favicon.ico"><span>萌ICP备 20222204 号</span><br><a href="https://beian.miit.gov.cn/#/Integrated/index"><img class="icp-icon" src="https://file.lovelyloli.cn/images/icon/police.png"><span>蜀ICP备 2021028665 号</span><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51012202001107"> <span>&nbsp;&nbsp;川公网安备 51012202001107 号</span><br><a class="footer-a" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral")">本网站由 <img src="https://file.lovelyloli.cn/images/icon/upyun.png" data-ll-status="loaded" width="60" height="auto" style="vertical-align:-10px;margin:'0 5px;"> 提供 CDN 加速 / 云储存服务</a> # 页脚自定义文本
     copyright: true  # 是否显示版权信息
 
   # Analysis
@@ -625,7 +625,7 @@
         enable: true  # 开启作者信息按钮
         icon: fab fa-github # 作者信息按钮在侧边栏的 icon
         text: 个人主页 # 作者信息按钮在侧边栏的文字
-        link: https://github.com/LuckyFisch # 作者信息按钮在侧边栏的链接
+        link: https://lovelyloli.cn # 作者信息按钮在侧边栏的链接
     card_announcement:  # 公告
       enable: true  # 是否开启公告
       content:  欢迎各位大佬访问我的博客~ # 公告内容
